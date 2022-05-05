@@ -11,5 +11,6 @@ jobs:
           java-version: 11
           distribution: 'adopt'
           cache: gradle
+          settings-path: ${{ github.workspace}}
       - name: Build with Gradle
-        run: ./gradlew build
+        run: chmod +x ./gradlew build
